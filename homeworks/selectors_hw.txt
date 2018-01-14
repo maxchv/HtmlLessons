@@ -1,0 +1,19 @@
+«адание по селекторам:
+ќб€зательно дожны быть использованы селекторы:
+
+	по элементу
+	по классу
+	по атрибуту
+	селектор соседей У+Ф
+	:hover
+	:active	
+	:before и :after
+	:nth-child
+
+Ўрифт: УTebuchet MCФ, Tebuchet, Arial, sans-serif
+
+«адание по формам:
+—оздать формы дл€ отпавки данных на тестовые страницы по адресу
+http://maxchv.pythonanywhere.com/
+
+ѕрезентаци€: http://slides.com/alexcss/forms#

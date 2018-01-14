@@ -1,0 +1,3 @@
+http://slides.com/ihector/selectors_list - селекторы
+
+http://flukeout.github.io/
