@@ -1,3 +1,6 @@
-http://slides.com/ihector/selectors_list - селекторы
 
-http://flukeout.github.io/
+http://slides.com/ihector/selectors_list - селекторы
+http://flukeout.github.io/ - практика по селекторам
+
+Домашнее задание: сверстать страницу представленную на selectors_hw.png
+На четвертую строку таблицы (13 plates...) наведен курсор мыши.

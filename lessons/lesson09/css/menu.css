@@ -1,0 +1,49 @@
+ body {
+     margin: 0;
+     background: #FFCCBC;
+ }
+
+ nav {
+     position: fixed;
+     width: 100%;
+     box-sizing: border-box;
+ }
+
+ ul {
+     margin: 0;
+     width: 100%;
+     box-sizing: border-box;
+     padding: 8px;
+     list-style: none;
+     display: block;
+     overflow: auto;
+     background: #323232;
+ }
+
+ li {
+     float: left;
+     margin: 8px;
+ }
+
+ a {
+     color: white;
+     border: 1px solid;
+     padding: 8px;
+     background: #FF6633;
+     display: block;
+     text-decoration: none;
+ }
+
+ a:hover {
+     background: #795548;
+ }
+
+ li:last-of-type,
+ li:nth-last-of-type(2) {
+     float: right;
+ }
+
+ main {
+     padding: 80px 16px 0 16px;
+     text-align: justify;
+ }

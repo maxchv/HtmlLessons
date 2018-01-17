@@ -1,0 +1,138 @@
+<!doctype html>
+
+<html>
+	<head>
+    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <style>
+        section+p {
+            color: blue;
+        }
+
+        p:hover {
+            background: yellow;
+            color: blue;
+            cursor: pointer;
+        }
+        
+        nav {
+            background: gray;
+            overflow: auto;
+            padding: 8px;
+        }
+        
+        nav ul {
+           list-style: none;
+            margin: 0;
+        }
+        
+        nav li {
+            margin: 0;
+        }
+        
+        nav a {
+            color: orange;            
+            text-decoration: none;
+            display: block;
+            float: left;
+            border: 1px solid white;       
+            padding: 8px;
+            margin: 8px;
+        }
+                        
+        nav a:hover {
+            background: orange;
+            color: white;
+        }
+        
+        nav li:last-child {
+            float: right;
+        }
+        
+        body > ul li:first-child a {
+            color: green;
+        }
+        
+        p:only-child {
+            color: magenta;
+        }
+        
+        p:empty {
+            height: 100px;
+            border: 1px solid blue;
+        }
+        
+        p:empty::before {
+            content: "empty";
+        }
+        
+        li:nth-last-child(2) a {
+            background: yellow;
+        }
+        
+        p a::before {
+            content: "Это ссылка: "; 
+        }
+        
+        p a::after {
+            content: " (" attr(href) ")"
+        }
+        
+        p::first-letter {
+            text-transform: uppercase;
+        }
+        
+        p.lorem:first-line {
+            color: green;
+        }
+                
+    </style>
+</head>
+
+<body>
+   <p><a href="http://some.link">link</a>
+   </p>
+   <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, sapiente est odit ipsa, nesciunt atque inventore libero ipsam vel explicabo in deserunt quas. Corporis fugit expedita delectus ex minus dolore!</p>
+    <nav>
+        <ul>
+        <li><a href="#">link 1</a></li>
+        <li><a href="#">link 2</a></li>
+        <li><a href="#">link 3</a></li>
+        <li><a href="#">link 4</a></li>
+        <li><a href="#"><i class="fa fa-user-o" aria-hidden="true"></i></a></li>
+        </ul>
+    </nav>
+    <ul>
+        <li><a href="#">link 1</a></li>
+        <li><a href="#">link 2</a></li>
+        <li><a href="#">link 3</a></li>
+        <li><a href="#">link 4</a></li>
+        <li><a href="#">link 5</a></li>
+        
+    </ul>
+    
+    <ul>
+        <li><a href="#">link 1</a></li>
+        <li><a href="#">link 2</a></li>
+        <li><a href="#">link 3</a></li>
+        <li><a href="#">link 4</a></li>
+        <li><a href="#">link 5</a></li>
+        
+    </ul>
+    <div>
+        div
+        <p>paragraph #1</p>
+        <section> section
+            <p>paragraph #2</p>
+        </section>
+        <p>paragraph <span>#3</span></p>
+        <p>paragraph #4</p>
+        <p>paragraph #5</p>
+    </div>
+    <div>
+        <p>paragraph #6</p>    
+    </div>
+    <p></p>    
+</body>
+</html>

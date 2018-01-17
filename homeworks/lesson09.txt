@@ -1,0 +1,6 @@
+видео: 	формы 		 https://youtu.be/o9Zg_i0USFw
+	таблицы 	 https://youtu.be/gYjr2R9mvVs
+	позиционирование https://youtu.be/IRNrJf5IHSU
+
+Сверстать веб страничку представленную на screenshot.png 
+используя фиксированный размер страницы.

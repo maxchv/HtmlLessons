@@ -1,0 +1,57 @@
+div {
+    position: relative;
+    border: 1px solid;
+    display: block;
+}
+
+#second {
+    background: lightblue;
+    top: 50px;
+    left: 30px;
+}
+
+#parent {
+    position: relative;
+    top: 50px;
+    height: 100px;
+    width: 500px;
+}
+
+#child1 {
+    color: white;
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    top: 50px;
+    left: 50px;
+    background: blue; 
+    z-index: 1;
+}
+
+#child2 {
+    background: yellow;
+    opacity: 0.5;
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    
+}
+
+#call-me {
+    z-index: 100;
+    right: 10px;
+    bottom: 10px;
+    border: 1px solid;
+    position: fixed;
+    background: green;
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    cursor: pointer;
+}
+
+
+

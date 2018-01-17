@@ -1,0 +1,93 @@
+<!doctype html>
+
+<html>
+	<head>
+    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            border: 1px solid;
+            line-height: 100px;
+            text-align: center;
+            font-family: cursive;
+            font-size: 1.5em;
+            background: white;
+            transition-property: all;
+            transition-duration: 2s;
+            transition-delay: 1s;
+            /*            transition-timing-function: cubic-bezier(.06,1,.86,0);*/
+            /*            transition: 1s;*/
+        }
+
+        div::before {
+            content: attr(class)
+        }
+
+        .translate:hover {
+            transform: translateX(50px);
+        }
+
+        .scale:hover {
+            transform-origin: 0 100%;
+            transform: scale(1.5, 2);
+        }
+
+        .rotate:hover {
+            transform-origin: 50% 50%;
+            transform: rotateY(180deg);
+        }
+
+        .skew:hover {
+            transform: skewX(-20deg) translateX(50px);
+        }
+
+        .transition {
+            background: blue;
+            color: yellow;
+            opacity: 0.5;
+        }
+
+        .transition:hover {
+            width: 200px;
+            color: blue;
+            background: yellow;
+            opacity: 1;
+        }
+
+        @keyframes anim {
+            from {
+                transform: translate(0, 0);
+            }
+            
+            50% {
+                transform: translate(500px, 0);
+            }
+            
+            to {
+                transform: translate(0, 0);
+            }
+        }
+
+        .animation {
+            animation-timing-function: ease-in-out;
+            animation-name: anim;
+            animation-iteration-count: infinite;
+            animation-duration: 2s;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="translate"></div>
+    <div class="scale"></div>
+    <div class="rotate"></div>
+    <div class="skew"></div>
+    <div class="transition"></div>
+    <div class="animation"></div>
+</body>
+</html>

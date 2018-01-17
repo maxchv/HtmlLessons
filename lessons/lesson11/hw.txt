@@ -1,0 +1,10 @@
+видео:	селекторы 	https://youtu.be/dYUPqZnWVIQ
+			https://youtu.be/AEkNGUfYmdk
+			https://youtu.be/8JW5-HT3bHo
+			https://youtu.be/54CoX59KJeo
+	трансформации,
+	анимации	https://youtu.be/MP47vwv1-v0
+
+Домашнее задание:
+	1. Закончить проект начатый на занятии (см. архив sunrise.rar)
+	2. Реализовать выподающее меню используя преобразования (см. hw_menu.mp4)
