@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tables</title>
+    <meta charset="utf-8" />
+    <style>
+        table, td, th {
+            border: 1px solid black;
+            /*border-spacing: 0;*/
+            border-collapse: collapse;
+        }
+        thead {
+            background: yellow;
+            color: blue;
+        }
+        tfoot {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tables</h1>
+    <table width="100%">
+        <tr>
+            <td>Id</td>
+            <td>First Name</td>
+            <td>Last Name</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Vasja</td>
+            <td>Pupkin</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Michael</td>
+            <td>Jackson</td>
+        </tr>
+    </table>
+    <h2>Table with thead, tbody and tfoot</h2>
+    <table width="100%">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Vasja</td>
+                <td>Pupkin</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Michael</td>
+                <td>Jackson</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">All students: 2</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>

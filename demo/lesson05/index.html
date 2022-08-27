@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson05</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            border: 1px solid;
+            line-height: 100px;
+            text-align: center;
+        }
+
+        #callback {
+            width: 60px;
+            height: 60px;
+            line-height: 60px;
+            border-radius: 60px;
+            background-color: green;
+            color: white;
+            cursor: pointer;
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            z-index: 100;
+        }
+
+        menu {
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            list-style-type: none;
+        }
+
+        menu li {
+            position: relative;
+            display: inline-block;
+            width: 100px;
+            height: 30px;
+            background-color: green;
+            color: lightgray;
+            text-align: center;
+            line-height: 30px;
+            margin: 0;
+            /* float: left; */
+        }
+
+        menu ul {
+            position: absolute;
+            padding: 0;
+            display: none;
+        }
+
+        menu ul li {
+            display: block;
+        }
+
+        menu a {
+            text-decoration: none;
+            color: lightgray;
+        }
+
+        menu>li+li {
+            margin-left: -1em;
+        }
+
+        li:hover ul {
+            display: block;
+        }
+
+
+        /* menu::after {
+            content: "";
+            height: 0;
+            display: table;
+            clear: both;
+        } */
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Lesson 05</h1>
+    </header>
+    <nav>
+        <menu>
+            <li><a href="">Home</a></li>
+            <li>
+                <a href="">Categories</a>
+                <ul>
+                    <li><a href="">Man</a></li>
+                    <li><a href="">Woomen</a></li>
+                    <li><a href="">Kids</a></li>
+                </ul>
+            </li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contacts</a></li>
+        </menu>
+    </nav>
+
+    <main>
+        <section>
+            <header>
+                <h2>Semantic elements</h2>
+            </header>
+            <p>New semantic elements:</p>
+            <ul>
+                <li>header</li>
+                <li>footer</li>
+                <li>main</li>
+                <li>nav</li>
+                <li>menu</li>
+                <li>section</li>
+                <li>article</li>
+                <li>aside</li>
+            </ul>
+        </section>
+        <section>
+            <header>
+                <h2>Positons</h2>
+            </header>
+            <p>CSS attribute <em>position</em></p>
+            <ol>
+                <li>static</li>
+                <li>relative</li>
+                <li>absolute</li>
+                <li>fixed</li>
+                <li>sticky</li>
+            </ol>
+
+            <article>
+                <header>
+                    <h3>static</h3>
+                </header>
+                <div style="position: static; top: 101px">static1</div>
+                <div style="position: static; top: -101px">static2</div>
+            </article>
+
+            <article style="border: 1px solid;">
+                <header style="position: sticky; top: 0; background-color: white;">
+                    <h3>sticky</h3>
+                </header>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex non ipsa omnis vero saepe iusto atque
+                    placeat quae architecto, necessitatibus doloremque sint laboriosam, ratione distinctio ullam
+                    accusantium temporibus tenetur quasi.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates corrupti molestiae ad
+                    dignissimos, consequatur explicabo blanditiis, voluptas incidunt odio rerum amet enim soluta veniam
+                    maiores, laboriosam velit illo aut unde.</p>
+            </article>
+
+            <article style="border: 2px dotted blue;">
+                <header>
+                    <h3>relative</h3>
+                </header>
+                <p>You can use CSS attributes</p>
+                <ol>
+                    <li>top</li>
+                    <li>left</li>
+                    <li>right</li>
+                    <li>bottom</li>
+                </ol>
+                <div style="position: relative; top: 101px; left: 101px">relative1</div>
+                <div style="position: relative; top: -101px">relative2</div>
+                <div style="position: relative; left: 101px; top: -202px">relative3</div>
+            </article>
+
+            <article style="border: 2px dotted green; position: relative; height: 101px;">
+                <header>
+                    <h3>absolute</h3>
+                </header>
+                <div style="position: absolute; top: 0; left: 202px">absolute 1</div>
+                <div style="position: absolute; top: 0; left: 101px">absolute 2</div>
+            </article>
+
+            <article>
+                <header>
+                    <h3>fixed</h3>
+                </header>
+                <div id="callback">Callback</div>
+            </article>
+        </section>
+
+        <section>
+            <header>
+                <h2>z-index</h2>
+            </header>
+            <article style="border: 1px solid blue; height: 100px; position: relative;">
+                <div
+                    style="z-index: 1; position: absolute; top: 25px; left: 25px; width: 50px; height: 50px; line-height: 50px; color: yellow; background-color: blue">
+                    1</div>
+                <div
+                    style="z-index: 2; position: absolute; width: 50px; height: 50px; line-height: 50px; color: blue; background-color: yellow">
+                    2</div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <address>Copyright &copy; Maxym Shaptala :)</address>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lesson 02</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Maksym Shaptala" />
+    <meta name="keywords" content="html, css, list, block elements, line elements" />
+    <style>
+        b, strong {
+            font-weight: normal;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lesson 02</h1>
+    <h2>Block elements</h2>
+    <p>
+        <u><b>Block</b> <i>element</i></u> - width (default) match width parrent
+    </p>
+    <h2>Inline elements</h2>
+    <p>
+        <ins><strong>Inline</strong> <em>element</em></ins> - width match content
+    </p>
+    <h2>Inline tags phisical formatting</h2>
+    <p>
+        Tags like &lt;b>, &lt;i>, &lt;u> - point how content should be shown
+    </p>
+    <h2>Semantic tags</h2>
+    <p>
+        Tags like &lt;strong>, &lt;em>, &lt;ins> -
+    </p>
+    <h2><abbr title="Cascade Style Sheet">CSS</abbr></h2>
+    <p>
+
+    </p>
+    <h2>Lists</h2>
+    <p>Types of list:</p>
+    <ul>
+        <li>Unordered list</li>
+        <li>Ordered list</li>
+        <li>Definition list</li>
+    </ul>
+    <h3>Unordered list</h3>
+    <p>
+        Using tags &lt;ul> and &lt;li>
+    </p>
+    <h4>Nested list</h4>
+    <ul>
+        <li style="list-style-type: circle">Item 1</li>
+        <li>Item 2</li>
+        <li>
+            Item 3
+            <ul>
+                <li>Subitem 1</li>
+                <li style="list-style-type: square">Subitem 2</li>
+                <li>
+                    Subitem 3
+                    <ul style="list-style-type: disc">
+                        <li>SubSubitem 1</li>
+                        <li>SubSubitem 2</li>
+                        <li style="list-style-type: '😊'">SubSubitem 3</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <h3>Ordered list</h3>
+    <ol style="list-style-type: upper-roman" start="100">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li >
+            Item 3
+            <ol style="list-style-type: lower-alpha">
+                <li>Subitem 1</li>
+                <li value="10">Subitem 2</li>
+                <li>
+                    Subitem 3
+                    <ol>
+                        <li>SubSubitem 1</li>
+                        <li>SubSubitem 2</li>
+                        <li>SubSubitem 3</li>
+                    </ol>
+                </li>
+            </ol>
+        </li>
+    </ol>
+    <h3>Definition list</h3>
+    <dl>
+        <dt>Browser</dt>
+        <dd>Opera, Safari, Edge, Firefox, Chrome - most popular brosers in the World</dd>
+    </dl>
+</body>
+</html>

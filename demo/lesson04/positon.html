@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title>
+    <style>
+        body {
+            padding: 0;
+            /* margin: 0; */
+            /* border: 2px dotted red; */
+        }
+
+        div {
+            /* float:left; */
+            width: 100px;
+            height: 100px;
+            display: block;
+            border: 1px solid;
+        }
+
+        menu {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            padding: 5px;
+            border-radius: 5px;
+            display: inline-block;
+            border: 1px solid black;
+            background-color: blue;
+        }
+
+        menu a {
+            color: yellow;
+            text-decoration: none;
+            text-shadow: lightgoldenrodyellow 1px -1px 3px;
+        }
+
+        li:hover {
+            background-color: black;
+        }
+
+        li:hover a {
+            color: red;
+        }
+
+        input + div:first-of-type {
+            /* display: none; */
+            visibility: hidden;
+        }
+
+        input:checked + div:first-of-type {
+            visibility: visible;
+            /* display: block; */
+        }
+    </style>
+</head>
+<body>
+    <h1>Lesson 04</h1>
+    <h2>Positions</h2>
+    <nav>
+        <menu>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Page 1</a></li>
+            <li><a href="#">Page 2</a></li>
+        </menu>
+    </nav>
+    <input type="checkbox"/>
+    <div>
+        First
+    </div>
+    <div>
+        Second
+    </div>
+</body>
+</html>
